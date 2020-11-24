@@ -1,0 +1,40 @@
+---
+title: "Final Project"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+source("./plot_functions.R")
+source("./inference_functions.R")
+```
+
+## Ian Evans
+
+This package is intended to improve understanding and analysis of COVID-19 data. The following dataset is used for analysis. <https://cran.r-project.org/web/packages/COVID19/index.html>  
+Goals:
+  1) Import Covid19 data into R and create an assortment of data visualizations.
+  2) Infer infection rates related to COVID by calculating the difference between predicted death rates for 2020 and deaths we have seen so far with COVID.
+  3) Determine if there's any correlation between this difference, which should correspond to the positivity rate if both are accurate measures.
+
+## 1
+
+The following basic plots were included in this package. The functionality of these plots could be expanded upon to include: focusing on specific dates, different comparisons of variables, or user defined expressions using quosures.
+
+```{r, echo=TRUE, message = FALSE, warning=FALSE}
+plot_deaths()
+plot_tests()
+plot_positiveTests()
+plot_positivityOfTest()
+plot_countyDeaths() #Note this function does not currently work as intended
+```
+
+
+## 2
+#Indiana Death Statistics obtained from: http://www.stats.indiana.edu/vitals/
+```{r, echo=TRUE, message = FALSE, warning=FALSE}
+plot_death_difference()
+```
+
+
+
