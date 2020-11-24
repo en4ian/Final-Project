@@ -84,6 +84,10 @@ plot_positiveTests <- function()
   plot
 }
 
+#' Plots positivity rate of tests that have been performed since March
+#'
+#' @examples
+#' plot_positivityOfTest()
 plot_positivityOfTest <- function()
 {
   #This function takes a dataset that includes both tests and confirmed cases of the tests. A new data frame is returned that stores the resulting positivity rate
@@ -106,9 +110,10 @@ plot_positivityOfTest <- function()
     plot
 }
 
-plot_positivityOfTest()
-
-
+#' Creates a map of deaths by county due to Covid since March
+#'
+#' @examples
+#' plot_countyDeaths()
 plot_countyDeaths <- function()
 {
   # This function is written from the tutorial on
@@ -175,6 +180,3 @@ plot_countyDeaths <- function()
   #show plot
   plot
 }
-
-
-plot_positiveTests()

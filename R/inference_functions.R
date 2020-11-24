@@ -26,7 +26,7 @@ predicted_deaths = coeffs[1] + coeffs[2]*year
 predicted_deaths
 
 #' Show plot of Deaths from Covid in Indiana since March compared to
-#' the deaths we expected to see in 2020 prior to Covid
+#' the deaths we expected to see in 2020 prior to Covid. A line is added to show the expected death rate (of all causes) for the year 2020.
 #'
 #' @examples
 #' plot_death_difference()

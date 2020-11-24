@@ -8,7 +8,10 @@ indiana_covid_data = covid19("US", level=2)
 indiana_covid_data <- indiana_covid_data %>% filter(key_alpha_2 == "IN")
 indiana_covid_deaths_dataFrame <- data.frame(date=indiana_covid_data$date,deaths=indiana_covid_data$deaths)
 
-
+#' A shiny gadget to select data from the timeline of Indiana deaths due to covid since march
+#'
+#' @examples
+#' selectData()
 selectData <- function(data, xvar, yvar) {
 
   ui <- miniPage(

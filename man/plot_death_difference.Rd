@@ -3,13 +3,13 @@
 \name{plot_death_difference}
 \alias{plot_death_difference}
 \title{Show plot of Deaths from Covid in Indiana since March compared to
-the deaths we expected to see in 2020 prior to Covid}
+the deaths we expected to see in 2020 prior to Covid. A line is added to show the expected death rate (of all causes) for the year 2020.}
 \usage{
 plot_death_difference()
 }
 \description{
 Show plot of Deaths from Covid in Indiana since March compared to
-the deaths we expected to see in 2020 prior to Covid
+the deaths we expected to see in 2020 prior to Covid. A line is added to show the expected death rate (of all causes) for the year 2020.
 }
 \examples{
 plot_death_difference()
